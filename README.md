@@ -6,5 +6,3 @@
 
 ## Deep Q Networkを使ったQ-learning
 `python main_dqn.py`
-
-※まだ学習がうまくいかない。
