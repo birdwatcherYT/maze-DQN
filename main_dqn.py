@@ -7,30 +7,19 @@ from Deep_Q_learning import Deep_Q_learning
 
 # 迷路
 # W: Wall, S : Start, G: Goal
-# BOARD = [
-#     "WWWWWWWWWWWWWWWWWWWWW",
-#     "WS  W W         W  GW",
-#     "WWW W W W W W W W W W",
-#     "W       W W W W   W W",
-#     "WWW WWW WWW WWWWW W W",
-#     "W   W W W         W W",
-#     "WWW W W WWWWWWW WWW W",
-#     "W                   W",
-#     "WWWWWWWWWWWWWWWWWWWWW",
-# ]
-
-# このサイズだと160epochくらいでマシになる↓
 BOARD = [
-    "WWWWWWWWW",
-    "WSW W   W",
-    "W W W WWW",
-    "W     W W",
-    "W WWW W W",
-    "W   W   W",
-    "W W W WWW",
-    "W W W  GW",
-    "WWWWWWWWW",
+    "WWWWWWWWWWWWWWWWWWWWW",
+    "WS    W     W       W",
+    "W W WWWWW W W W WWWWW",
+    "W W       W   W W   W",
+    "W W W WWW WWWWW W WWW",
+    "W W W       W       W",
+    "W W W WWW WWW W WWWWW",
+    "W             W    GW",
+    "WWWWWWWWWWWWWWWWWWWWW",
 ]
+# 300エポックくらいでマシになる
+
 # 何回ゴールするか
 EPISODE_MAX = 1000
 # ゴールまでの打ち切りステップ数
@@ -47,12 +36,12 @@ HIDDEN_SIZE = 32
 # 蓄える行動履歴データの数
 MEMORY_SIZE = 500000
 # バッチサイズ
-BATCH_SIZE = 128
+BATCH_SIZE = 1024
 # 損失関数
 LOSS = "mse"
 # LOSS = "huber_loss"
 # ミニバッチで繰り返す学習回数
-EPOCH = 1
+EPOCH = 2
 # 更新する間隔
 UPDATE_INTERVAL = 10
 # ターゲットネットワークを更新する間隔

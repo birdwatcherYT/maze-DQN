@@ -6,3 +6,4 @@
 
 ## Deep Q Networkを使ったQ-learning
 `python main_dqn.py`
+- 300エポックくらいで学習完了する。

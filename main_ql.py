@@ -1,25 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # 強化学習入門 実践
-
 import time
 from Maze import Maze
 from Q_learning import Q_learning
 
 # 迷路
 # W: Wall, S : Start, G: Goal
-# BOARD = [
-#     "WWWWWWWWWWWWWWWWWWWWW",
-#     "WS  W W         W  GW",
-#     "WWW W W W W W W W W W",
-#     "W       W W W W   W W",
-#     "WWW WWW WWW WWWWW W W",
-#     "W   W W W         W W",
-#     "WWW W W WWWWWWW WWW W",
-#     "W                   W",
-#     "WWWWWWWWWWWWWWWWWWWWW",
-# ]
 BOARD = [
     "WWWWWWWWWWWWWWWWWWWWW",
     "WS    W     W       W",
