@@ -1,7 +1,5 @@
 # coding: utf-8
 
-# # 強化学習入門 実践
-
 import numpy as np
 
 
