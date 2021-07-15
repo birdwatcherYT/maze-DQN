@@ -78,7 +78,6 @@ class Deep_Q_learning:
         # 報酬 + 割引率 * ( max_{a'} Q(s', a') ) がターゲット
         targets[np.arange(batch_size), actions] = rewards + discount_rate * pred_max * not_fins
 
-        # self.Qmain.train_on_batch(inputs, targets)
         self.Qmain.fit(inputs, targets, epochs=epoch, verbose=0)
 
     def select_action(self, random_rate):

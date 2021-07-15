@@ -18,7 +18,7 @@ BOARD = [
     "W             W    GW",
     "WWWWWWWWWWWWWWWWWWWWW",
 ]
-# 300エポックくらいでマシになる
+# 300episodeくらいでマシになる
 
 # 何回ゴールするか
 EPISODE_MAX = 1000
