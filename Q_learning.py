@@ -30,14 +30,17 @@ class Q_learning:
         return self.select_best_action()
 
     def get_state(self):
+        """状態を取得"""
         _, col = self.maze.board_size()
         x, y = self.maze.get_position()
         return x * col + y
 
     def reward(self):
+        """報酬"""
         return 0 if self.maze.is_goal() else -1
 
     def from_start(self):
+        """スタートからやり直す"""
         self.maze.reset()
         self.state = self.get_state()
 

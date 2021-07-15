@@ -94,17 +94,20 @@ class Deep_Q_learning:
         return action
 
     def get_state(self):
+        """状態を取得"""
         row, col = self.maze.board_size()
         x, y = self.maze.get_position()
         return x / row, y / col
         # return x, y
 
     def reward(self):
+        """報酬"""
         return 1 if self.maze.is_goal() else -1
         # return 0 if self.maze.is_goal() else -1
         # return 1 if self.maze.is_goal() else 0
 
     def from_start(self):
+        """スタートからやり直す"""
         self.maze.reset()
         self.state = self.get_state()
 
